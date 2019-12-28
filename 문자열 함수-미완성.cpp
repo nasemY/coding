@@ -21,6 +21,8 @@ int strcmp1(char* str1, char*str2) {
 int main() {
 	char str1[100];
 	char str2[100];
+	memset(str1, 0, sizeof(str1));
+	memset(str2, 0, sizeof(str2));
 	scanf("%s %s", str1, str2);
 	printf("%d", strcmp1(str1, str2));
 	return 0;
